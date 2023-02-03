@@ -10,11 +10,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+   
 }
 body {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 300;
   font-size: 14px;
+  height: 100%;
+  overflow-x: hidden;
+   
 }
 
 .listItem:hover {
@@ -77,3 +81,4 @@ body {
 .mouse-state {
   cursor: none;
 }
+

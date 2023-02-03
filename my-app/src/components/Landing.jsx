@@ -206,7 +206,7 @@ const Landing = () => {
 
 
       <div className="h-4 w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500"></div>
-      <div className="flex flex-row">
+      <div className="flex flex-row ">
         <div className="px-4 py-2">
           <LanguagesDropdown onSelectChange={onSelectChange} />
         </div>
@@ -214,8 +214,17 @@ const Landing = () => {
           <ThemeDropdown handleThemeChange={handleThemeChange} theme={theme} />
         </div>
       </div>
-      <div className="flex flex-row space-x-4 items-start px-4 py-4">
-        <div className="flex flex-col w-full h-full justify-start items-end">
+      <div class="container m-auto p-8 text-grey-darkest">
+ 
+
+ 
+
+</div>
+ 
+
+ 
+       <div className="flex sm:flex-row flex-col space-x-4 items-start px-4 py-4">
+        <div className="flex flex-col w-full h-full justify-start  ">
           <CodeEditorWindow
             code={code}
             onChange={onChange}
@@ -224,13 +233,15 @@ const Landing = () => {
           />
         </div>
 
-        <div className="right-container flex flex-shrink-0 w-[30%] flex-col">
+        <div className="right-container flex flex-shrink w-[30%] flex-col">
           <OutputWindow outputDetails={outputDetails} />
-          <div className="flex flex-col items-end">
+          <div className="flex flex-col ">
             <CustomInput
               customInput={customInput}
               setCustomInput={setCustomInput}
             />
+          </div>
+          <div className="flex flex-col ">
             <button
               onClick={handleCompile}
               disabled={!code}
@@ -244,7 +255,7 @@ const Landing = () => {
           </div>
           {outputDetails && <OutputDetails outputDetails={outputDetails} />}
         </div>
-      </div>
+      </div> 
       
     </>
   );
