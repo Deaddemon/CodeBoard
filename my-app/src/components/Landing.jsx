@@ -191,6 +191,8 @@ const Landing = () => {
   return (
     <>
      <Navbar/>
+
+     <div id="landing"> 
       <ToastContainer
         position="top-right"
         autoClose={2000}
@@ -208,7 +210,7 @@ const Landing = () => {
 
 
       <div className="h-4 w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500"></div>
-      <div className="flex flex-row ">
+      <div className="flex flex-col md:flex-row">
         <div className="px-4 py-2">
           <LanguagesDropdown onSelectChange={onSelectChange} />
         </div>
@@ -216,16 +218,11 @@ const Landing = () => {
           <ThemeDropdown handleThemeChange={handleThemeChange} theme={theme} />
         </div>
       </div>
-      <div class="container m-auto p-8 text-grey-darkest">
+      
  
 
  
-
-</div>
- 
-
- 
-       <div className="flex sm:flex-row flex-col space-x-4 items-start px-4 py-4">
+       <div className="flex sm:flex-row flex-col sm:space-x-4 items-start px-4 py-4">
         <div className="flex flex-col w-full h-full justify-start  ">
           <CodeEditorWindow
             code={code}
@@ -233,10 +230,12 @@ const Landing = () => {
             language={language?.value}
             theme={theme.value}
           />
+           {outputDetails && <OutputDetails outputDetails={outputDetails} />}
         </div>
 
-        <div className="right-container flex flex-shrink w-[30%] flex-col">
-          <OutputWindow outputDetails={outputDetails} />
+        <div className="flex flex-col w-full item-start sm:w-[30%]  ">
+            
+            <OutputWindow outputDetails={outputDetails} />
           <div className="flex flex-col ">
             <CustomInput
               customInput={customInput}
@@ -255,9 +254,10 @@ const Landing = () => {
               {processing ? "Processing..." : "Compile and Execute"}
             </button>
           </div>
-          {outputDetails && <OutputDetails outputDetails={outputDetails} />}
+          
         </div>
       </div> 
+      </div>
       
     </>
   );

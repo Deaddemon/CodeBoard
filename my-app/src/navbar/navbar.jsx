@@ -1,33 +1,35 @@
 import React from "react";
 import './navbar.css';
-import { useNavigate } from "react-router-dom";
+ 
+import { HashLink } from 'react-router-hash-link';
 
 export default function Navbar() {
-  const nav = useNavigate();
-  const handleClickLanding = () => {
-    nav("/landing");
-  };
-  const handleClickCanvas = () => {
-    nav("/canvas");
-  };
+   
   return (
+
+    
     <div className="Navbar">
-      <div className="navbar-header">
+        <div className="flex flex-col md:flex-row navbar-header" >
+         
         <button
           className="navbar-btn navbar-btn-primary navbar-btn-landing"
-          onClick={handleClickLanding}
+           
         >
-          {" "}
-          Code editor{" "}
+          <HashLink smooth to='/landing/#landing' > Code Editor </HashLink>
         </button>
+      
         <button
           className="navbar-btn navbar-btn-primary navbar-btn-canvas"
-          onClick={handleClickCanvas}
+  
         >
-          {" "}
-          Whiteboard{" "}
+         <HashLink smooth to='/canvas/#canvas' > White Board  </HashLink>
         </button>
+     
       </div>
+
+       
     </div>
   );
 }
+ 
+ 

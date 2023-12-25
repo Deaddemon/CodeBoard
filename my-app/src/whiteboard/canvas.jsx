@@ -100,7 +100,7 @@ export default function Canvas() {
   return (
     <>
     <Navbar/>
-      <div className="canvas-btn">
+      <div className="canvas-btn" id="canvas">
       <button onClick={getPen} className="btn-width">
           Pencil
         </button>
