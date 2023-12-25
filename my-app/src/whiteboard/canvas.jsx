@@ -1,6 +1,6 @@
 
 import React, { useRef, useState, useEffect } from "react";
- 
+ import Navbar from "../navbar/navbar";
 
 
 export default function Canvas() {
@@ -99,6 +99,7 @@ export default function Canvas() {
 
   return (
     <>
+    <Navbar/>
       <div className="canvas-btn">
       <button onClick={getPen} className="btn-width">
           Pencil

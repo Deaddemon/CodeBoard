@@ -16,6 +16,7 @@ import CustomInput from "../components/CustomInput";
 import OutputDetails from "../components/OutputDetails";
 import ThemeDropdown from "./ThemeDropdown";
 import LanguagesDropdown from "../components/LanguageDropdown";
+import Navbar from "../navbar/navbar";
 
 const javascriptDefault = `// some comment
 const num1 = 5;
@@ -189,6 +190,7 @@ const Landing = () => {
 
   return (
     <>
+     <Navbar/>
       <ToastContainer
         position="top-right"
         autoClose={2000}

@@ -12,16 +12,16 @@ export default function Navbar() {
   };
   return (
     <div className="Navbar">
-      <div className="header">
+      <div className="navbar-header">
         <button
-          className="btn btn-primary btn-landing"
+          className="navbar-btn navbar-btn-primary navbar-btn-landing"
           onClick={handleClickLanding}
         >
           {" "}
           Code editor{" "}
         </button>
         <button
-          className="btn btn-primary btn-canvas"
+          className="navbar-btn navbar-btn-primary navbar-btn-canvas"
           onClick={handleClickCanvas}
         >
           {" "}
