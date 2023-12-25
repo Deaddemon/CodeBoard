@@ -7,12 +7,19 @@ https://code-board-adg1.vercel.app/
 
 ### Features
 1. Compiles code in 46 programming languages
-2. Dedicated UI for output and input 
-3. Shows Status, Memory and Time taken by program
-4. 56 Themes available for the area of code editor
-5. Bottom part contains the area for scribbling the thoughts, that is , a white board
-6. White board supports pencil, size of pencil , color of pencil, clear and erase options.
-7. It is only Desktop friendly.
+2. 56 Themes available for the area of code editor
+3. Dedicated UI for output and input 
+4. Shows output details: Status, Memory and Time taken by program
+5. Compiles Code on Ctrl + Enter (Keypress Events)
+6. A drawing tool to scratch up the thoughts
+7. White board supports <br>
+    (i) pencil<br>
+   (ii) size of pencil<br>
+   (iii) color of pencil<br>
+   (iv) clear<br>
+   (v)  erase <br>
+9. In App Notification.
+10. Highly Responsive.
 
 ### Sneak peek
 ![image](https://github.com/Deaddemon/CodeBoard/assets/77224604/80cdaf57-aae7-45ec-88db-d2c4e38c4890)
