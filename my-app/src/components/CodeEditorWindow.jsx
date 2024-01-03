@@ -6,20 +6,11 @@ const CodeEditorWindow = ({ onChange, language, code, theme }) => {
   const [value, setValue] = useState(code || "");
 
   const handleEditorChange = (value) => {
-     
-    onChange = (action, data) => {
-        switch (action) {
-          case "code": {
-            setValue(data);
-            break;
-          }
-          default: {
-            console.warn("case not handled!", action, data);
-          }
-        }
-      };
+    setValue(value);
+    onChange("code", value);
   };
 
+  
   return (
     <div className="overlay rounded-md overflow-hidden w-full h-full shadow-4xl">
       <Editor
