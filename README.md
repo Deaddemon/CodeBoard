@@ -21,12 +21,13 @@ https://code-board-adg1.vercel.app/
 9. In App Notification.
 10. Highly Responsive.
 
+
 ### Sneak peek
-![image](https://github.com/Deaddemon/CodeBoard/assets/77224604/80cdaf57-aae7-45ec-88db-d2c4e38c4890)
-<br>
-![image](https://github.com/Deaddemon/CodeBoard/assets/77224604/5e741c2d-5164-4e0d-bc66-c3227de98d89)
-<br>
-![image](https://github.com/Deaddemon/CodeBoard/assets/77224604/23660d85-ad52-43df-8399-33ec6f7e455a)
+
+ 
+
+![image](https://github.com/Deaddemon/CodeBoard/assets/77224604/7cbdf028-9985-4870-80de-eabea2642baa)
+
 
 ### Try in your local
 1. git clone https://github.com/Deaddemon/CodeBoard.git
